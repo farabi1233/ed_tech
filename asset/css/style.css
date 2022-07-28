@@ -119,6 +119,12 @@ body {
     line-height: 27px;
     color: #289BDE;
 }
+.read-more{
+    color: #0d6efd;
+    text-decoration: none;
+    padding: 4px;
+    font-size: 14px;
+}
 
 .name {
     font-weight: 600;
