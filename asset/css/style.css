@@ -319,6 +319,12 @@ body {
         display: block;
         left: 29%;
     }
+    .next{
+        display: none;
+    }
+    .prev{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
@@ -340,6 +346,12 @@ body {
     .course-name {
         font-size: 28px;
 
+    }
+    .next{
+        display: none;
+    }
+    .prev{
+        display: none;
     }
 
 }
