@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
@@ -34,7 +33,6 @@ body {
     line-height: 30px;
     text-align: center;
     color: #F4F4F4;
-
 }
 
 .bg-blue {
@@ -69,7 +67,6 @@ body {
     line-height: 30px;
     text-align: center;
     color: #289BDE;
-
 }
 
 .title {
@@ -94,7 +91,6 @@ body {
     color: #1D1D1D;
 }
 
-
 .title-description {
     font-weight: 400;
     font-size: 16px;
@@ -108,7 +104,6 @@ body {
     font-size: 22px;
     line-height: 38px;
     color: #4A4A4A;
-
 }
 
 .description {
@@ -116,7 +111,6 @@ body {
     font-size: 13px;
     line-height: 24px;
     color: #777777;
-
 }
 
 .course-price {
@@ -234,7 +228,10 @@ body {
         display: block;
         left: 24%;
     }
-   
+    .reg-lg{
+        display: none;
+    }
+
 
 }
 
@@ -244,8 +241,6 @@ body {
         display: block;
         left: 10%;
     }
-    
-
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
@@ -301,9 +296,13 @@ body {
     .reg {
         position: relative;
         display: block;
-        left: 29%;
+        
+         .reg-lg{
+        display: none;
     }
-    
+    .reg-lg{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
@@ -326,16 +325,21 @@ body {
         font-size: 28px;
 
     }
-    
 
+    .reg-lg{
+        display: none;
+    }
 }
+
 @media only screen and (max-width: 994px) {
-    .next{
-        display: none !important;
-    }
-    .prev{
+    .next {
         display: none !important;
     }
 
+    .prev {
+        display: none !important;
+    }
+    .reg-lg{
+        display: none;
+    }
 }
-
