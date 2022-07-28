@@ -234,12 +234,7 @@ body {
         display: block;
         left: 24%;
     }
-    .next{
-        display: none;
-    }
-    .prev{
-        display: none;
-    }
+   
 
 }
 
@@ -249,12 +244,7 @@ body {
         display: block;
         left: 10%;
     }
-    .next{
-        display: none;
-    }
-    .prev{
-        display: none;
-    }
+    
 
 }
 
@@ -283,12 +273,6 @@ body {
         position: relative;
         display: block;
         left: 24%;
-    }
-    .next{
-        display: none;
-    }
-    .prev{
-        display: none;
     }
 }
 
@@ -319,12 +303,7 @@ body {
         display: block;
         left: 29%;
     }
-    .next{
-        display: none;
-    }
-    .prev{
-        display: none;
-    }
+    
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
@@ -347,19 +326,16 @@ body {
         font-size: 28px;
 
     }
+    
+
+}
+@media only screen and (max-width: 994px) {
     .next{
-        display: none;
+        display: none !important;
     }
     .prev{
-        display: none;
+        display: none !important;
     }
 
 }
 
-@media only screen and (min-width: 992px) and (max-width: 997px) {
-    /* .reg{
-        position: relative;
-        display: block;
-        left: 10%;
-    } */
-}
