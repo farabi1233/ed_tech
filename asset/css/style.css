@@ -6,3 +6,305 @@ body {
     margin: 0px;
     padding: 0px;
 }
+
+.reg {
+    display: none;
+}
+
+.nav-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #777777;
+
+}
+
+.slider-title {
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 85px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.slider-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #F4F4F4;
+
+}
+
+.bg-blue {
+    background-color: #289BDE;
+}
+
+.btn-slider {
+    background: #289BDE;
+    font-weight: 600;
+    width: 200px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.blue-button {
+    background: #289BDE;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.white-button {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #289BDE;
+
+}
+
+.title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    color: #1D1D1D;
+}
+
+.title-left {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 60px;
+    color: #1D1D1D;
+}
+
+.count {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 60px;
+    color: #1D1D1D;
+}
+
+
+.title-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #777777;
+}
+
+.course-name {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 38px;
+    color: #4A4A4A;
+
+}
+
+.description {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #777777;
+
+}
+
+.course-price {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #289BDE;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4A4A4A;
+}
+
+.accordion-button {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4A4A4A;
+}
+
+.footer-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.footer-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #E8E8E8;
+
+}
+
+.card-data {
+    padding: 5px 5px 5px 0px;
+}
+
+.overlay {
+    filter: brightness(60%);
+}
+
+@media only screen and (max-width: 764px) {
+    .sponsor {
+        display: none;
+    }
+
+    .register {
+        text-align: center;
+    }
+
+    .card-data {
+        padding: 22px 12px;
+    }
+
+    .slider-title {
+        font-size: 30px;
+
+    }
+
+    .slider-description {
+        font-size: 14px;
+        line-height: 18px;
+
+
+
+    }
+
+    .btn-slider {
+        background: #289BDE;
+        font-weight: 600;
+        width: 100px;
+        font-size: 12px;
+        line-height: 10px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .course-name {
+        font-size: 28px;
+
+    }
+
+    .reg {
+        position: relative;
+        display: block;
+        left: 24%;
+    }
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 600px) {
+    .reg {
+        position: relative;
+        display: block;
+        left: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .sponsor {
+        display: none;
+    }
+
+    .register {
+        text-align: center;
+    }
+
+    .count {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 60px;
+        color: #1D1D1D;
+    }
+
+    .course-name {
+        font-size: 28px;
+
+    }
+
+    .reg {
+        position: relative;
+        display: block;
+        left: 24%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .sponsor {
+        display: none;
+    }
+
+    .register {
+        text-align: center;
+    }
+
+    .count {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 60px;
+        color: #1D1D1D;
+    }
+
+    .course-name {
+        font-size: 28px;
+
+    }
+
+    .reg {
+        position: relative;
+        display: block;
+        left: 29%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .sponsor {
+        display: none;
+    }
+
+    .register {
+        text-align: center;
+    }
+
+    .count {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 60px;
+        color: #1D1D1D;
+    }
+
+    .course-name {
+        font-size: 28px;
+
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 997px) {
+    /* .reg{
+        position: relative;
+        display: block;
+        left: 10%;
+    } */
+}
