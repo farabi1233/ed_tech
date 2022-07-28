@@ -58,6 +58,11 @@ body {
     color: #FFFFFF;
 }
 
+.blue-button::hover {
+    background: #126697;
+
+}
+
 .white-button {
     background: #FFFFFF;
     border: 1px solid #FFFFFF;
@@ -67,6 +72,11 @@ body {
     line-height: 30px;
     text-align: center;
     color: #289BDE;
+}
+
+.white-button::hover {
+    background: #eeeaea;
+
 }
 
 .title {
@@ -87,7 +97,7 @@ body {
 .count {
     font-weight: 600;
     font-size: 45px;
-    line-height: 60px;
+    line-height: 40px;
     color: #1D1D1D;
 }
 
@@ -119,7 +129,8 @@ body {
     line-height: 27px;
     color: #289BDE;
 }
-.read-more{
+
+.read-more {
     color: #0d6efd;
     text-decoration: none;
     padding: 4px;
@@ -156,6 +167,11 @@ body {
 
 }
 
+.logo-color {
+    text-decoration: none;
+    color: white;
+}
+
 .card-data {
     padding: 5px 5px 5px 0px;
 }
@@ -173,23 +189,11 @@ body {
     color: #4A4A4A;
 }
 
-.prev {
+.prev-next {
     font-size: 30px;
-    position: relative;
-    top: 49%;
-    z-index: 11;
     color: #289BDE;
-    left: -2%;
 }
 
-.next {
-    font-size: 30px;
-    position: relative;
-    top: 40%;
-    z-index: 11;
-    color: #289BDE;
-    right: -96%;
-}
 
 @media only screen and (max-width: 764px) {
     .sponsor {
@@ -234,7 +238,8 @@ body {
         display: block;
         left: 24%;
     }
-    .reg-lg{
+
+    .reg-lg {
         display: none;
     }
 
@@ -259,10 +264,7 @@ body {
     }
 
     .count {
-        font-weight: 600;
         font-size: 24px;
-        line-height: 60px;
-        color: #1D1D1D;
     }
 
     .course-name {
@@ -275,6 +277,7 @@ body {
         display: block;
         left: 24%;
     }
+
 }
 
 
@@ -288,10 +291,7 @@ body {
     }
 
     .count {
-        font-weight: 600;
         font-size: 24px;
-        line-height: 60px;
-        color: #1D1D1D;
     }
 
     .course-name {
@@ -302,11 +302,13 @@ body {
     .reg {
         position: relative;
         display: block;
-        
-         .reg-lg{
+    }
+
+    .reg-lg {
         display: none;
     }
-    .reg-lg{
+
+    .reg-lg {
         display: none;
     }
 }
@@ -321,10 +323,7 @@ body {
     }
 
     .count {
-        font-weight: 600;
         font-size: 24px;
-        line-height: 60px;
-        color: #1D1D1D;
     }
 
     .course-name {
@@ -332,20 +331,13 @@ body {
 
     }
 
-    .reg-lg{
+    .reg-lg {
         display: none;
     }
 }
 
 @media only screen and (max-width: 994px) {
-    .next {
-        display: none !important;
-    }
-
-    .prev {
-        display: none !important;
-    }
-    .reg-lg{
+    .reg-lg {
         display: none;
     }
 }
