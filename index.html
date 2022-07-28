@@ -10,7 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>My tech</title>
+    <title>My Tech</title>
+    <link rel="icon" type="image/x-icon" href="asset/images/favicon.png">
+
     <link rel="stylesheet" href="asset/css/style.css">
     <script src="https://kit.fontawesome.com/26389fd30f.js" crossorigin="anonymous"></script>
 
@@ -25,7 +27,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
-                <button class="btn btn-primary reg" >
+                <button class="btn btn-primary reg">
                     Register
                 </button>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -39,20 +41,19 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Course</a>
+                            <a class="nav-link" href="#course">Course</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#socail_info">Services</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#student">Students</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Deals</a>
+                            <a class="nav-link" href="#sponsor">Sponsor</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
+                       
 
                     </ul>
                     <button class="btn btn-primary">
@@ -113,7 +114,7 @@
         <!-- slider end -->
 
         <!-- courses  -->
-        <section class=" register container my-5">
+        <section id="course" class="course container my-5">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-6 col-md-6 col-sl-12">
                     <h2 class="title">Discover Our Popular Courses</h2>
@@ -241,7 +242,7 @@
         </section>
         <!-- courses end  -->
         <!-- content count  -->
-        <section class=" all_count container my-5">
+        <section id="socail_info" class="socail_info container my-5">
             <div class="row my-5  ">
                 <div class="col-md-6 p-0">
                     <img src="asset/images/working.png" class="img-fluid">
@@ -277,7 +278,7 @@
         </section>
         <!-- content count end  -->
         <!-- register  -->
-        <section class=" register container my-5 ">
+        <section id="register" class="register container my-5 ">
             <div class="row my-5 justify-content-center ">
                 <div class="col-11">
                     <div class="card bg-blue">
@@ -291,20 +292,111 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-md-12">
-                                    <button class="btn white-button ">
+                                    <button type="button" class="btn white-button" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
                                         Register Now
                                     </button>
                                 </div>
+
+                                <!-- Button trigger modal -->
+
+
+                                <!-- Modal -->
+
                             </div>
+
+
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
         </section>
         <!-- register end  -->
 
+
+        <!-- modal  -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Register Form</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="" action="">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <label for="name">Name <span class="text-red">*</span>
+                                    </label>
+                                    <div class="form-label-group">
+                                        <input class="form-control " id="name" name="name" type="text">
+                                        <p class="help-block text-red"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <label for="email">Email<span class="text-red">*</span></label>
+                                    <div class="form-label-group">
+                                        <input class="form-control " id="email" name="email" type="text">
+                                        <p class="help-block text-red"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <label for="password">Password<span class="text-red">*</span></label>
+                                    <div class="form-label-group">
+                                        <input class="form-control" id="password" name="password" type="password"
+                                            value="">
+                                        <p class="help-block text-red"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <label for="password_confirmation">Confirm Password<span
+                                            class="text-red">*</span></label>
+                                    <div class="form-label-group">
+                                        <input class="form-control" id="password_confirmation"
+                                            name="password_confirmation" type="password" value="">
+                                        <p class="help-block text-red">
+                                        </p>
+                                    </div>
+                                </div>
+
+                               
+                                <div class="col-md-12 col-12">
+                                    <label for="address">Address</label>
+                                    <div class="form-label-group">
+                                        <textarea placeholder="Dhaka,Bangladesh" class="form-control" name="address" id="address" cols="30" rows="5">
+
+                                        </textarea>
+                                      
+                                        <p class="help-block text-red"></p>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+                           
+                    </div>
+
+
+                    <input type="hidden" name="user_from" value="register">
+
+
+                    <button type="submit" class="btn purple  btn-inline mb-20" style="background:#1f415b;color:white"
+                        id="buyer_register">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- modal end  -->
+
         <!-- review  -->
-        <section class=" student container my-5">
+        <section id="student" class=" student container my-5">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-6 col-md-6 col-sl-12">
                     <h3 class="title">Meet Our Successfull Students</h3>
@@ -366,7 +458,7 @@
         <!-- review end  -->
 
         <!-- review  -->
-        <section class=" review container my-5">
+        <section id="feedback" class=" feedback container my-5">
             <div class="row justify-content-center ">
 
                 <div class="col-lg-6 col-md-6 col-sl-12">
@@ -377,14 +469,80 @@
                         looking at its layout.
                     </p>
                 </div>
+
+                <div class="row">
+                    <div class="btn-left"></div>
+                    <div class="col-lg-6 col-md-6 col-md-12 my-2">
+                        <div class="card shadow-sm">
+                            <div class="card-body ">
+                                <div class="header d-flex justify-content-between align-items-center">
+                                    <div class="coma">
+                                        <img style="max-width: 60px;" src="/asset/images/comma.png" alt="">
+                                    </div>
+                                    <div class="icon" style="color:gold;">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="description m-2">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem.
+                                </p>
+                                <div class="footer d-flex align-items-center">
+                                    <div class="coma">
+                                        <img style="max-width: 60px;" src="/asset/images/student/student-5.png" alt="">
+                                    </div>
+                                    <div class="data px-4" >
+                                        <h3 class="review-name">Mr Alex</h3>
+                                        <p class="description"> Web Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-md-12 my-2">
+                        <div class="card shadow-sm">
+                            <div class="card-body ">
+                                <div class="header d-flex justify-content-between align-items-center">
+                                    <div class="coma">
+                                        <img style="max-width: 60px;" src="/asset/images/comma.png" alt="">
+                                    </div>
+                                    <div class="icon" style="color:gold;">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="description m-2">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem.
+                                </p>
+                                <div class="footer d-flex align-items-center">
+                                    <div class="coma">
+                                        <img style="max-width: 60px;" src="/asset/images/student/student-6.png" alt="">
+                                    </div>
+                                    <div class="data px-4" >
+                                        <h3 class="review-name">Mrs Mira</h3>
+                                        <p class="description"> Web Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="row my-3 ">
             </div>
         </section>
         <!-- review end  -->
+
+
         <!-- faq  -->
-        <section class=" faq container my-5">
+        <section id="faq" class=" faq container my-5">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-6 col-sl-12">
                     <h3 class="title">Frequently Asked Questions</h3>
@@ -487,7 +645,7 @@
         <!-- faq end  -->
 
         <!-- sponsor  -->
-        <section class=" sponsor container my-5">
+        <section id="sponsor" class=" sponsor container my-5">
             <h3 class="title mb-4">Trusted by over 800+ companies</h3>
             <div class="row my-3">
                 <div class="col-2">
